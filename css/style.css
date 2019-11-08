@@ -1,0 +1,128 @@
+body {
+
+}
+
+/*Layout*/
+.ba-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1366px;
+}
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+    display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-wrapper{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    padding: 50px;
+}
+.ba-square {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.ba-square__red {
+    background-color: red;
+    top: 10%;
+    left: 15%;
+}
+.ba-square__green {
+    background-color: green;
+    top: 15%;
+    right: 15%;
+}
+.ba-square__blue{
+    background-color: blue;
+    bottom: 15%;
+    left: 10%;
+}
+.ba-square__yellow {
+    background-color: yellow;
+    bottom: 10%;
+    right: 14%;
+}
+.ba-square:hover {
+    z-index: 1;
+    cursor: pointer;
+}
+
+.ba-circle {
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+}
+.ba-circle:before{
+    content: "";
+    height: 40px;
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    left: 45%;
+    top: 15%;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+.ba-circle:after {
+    content: "";
+    height: 5px;
+    width: 40px;
+    background-color: black;
+    position: absolute;
+    left: 15%;
+    top: 45%;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+.ba-square:hover .ba-circle:before,
+.ba-square:hover .ba-circle:after {
+    opacity: 1;
+
+}
