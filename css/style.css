@@ -65,22 +65,22 @@ textarea {
     height: 200px;
     position: absolute;
 }
-.ba-square__red {
+.ba-square--red {
     background-color: red;
     top: 10%;
     left: 15%;
 }
-.ba-square__green {
+.ba-square--green {
     background-color: green;
     top: 15%;
     right: 15%;
 }
-.ba-square__blue{
+.ba-square--blue{
     background-color: blue;
     bottom: 15%;
     left: 10%;
 }
-.ba-square__yellow {
+.ba-square--yellow {
     background-color: yellow;
     bottom: 10%;
     right: 14%;
