@@ -55,7 +55,7 @@ textarea {
 
 .ba-wrapper{
     margin: 0 auto;
-    width: 500px;
+    max-width: 500px;
     height: 500px;
     position: relative;
     padding: 50px;
@@ -124,5 +124,35 @@ textarea {
 .ba-square:hover .ba-circle:before,
 .ba-square:hover .ba-circle:after {
     opacity: 1;
+
+}
+
+@media screen and (max-width: 500px) {
+    .ba-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .ba-square {
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+        height: 200px;
+    }
+    .ba-square--red,
+    .ba-square--green,
+    .ba-square--blue,
+    .ba-square--yellow {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .ba-circle:before,
+    .ba-circle:after {
+        opacity: 1;
+    }
+
 
 }
