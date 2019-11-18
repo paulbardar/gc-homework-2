@@ -130,6 +130,8 @@ textarea {
 @media screen and (max-width: 500px) {
     .ba-wrapper {
         position: relative;
+        display: flex;
+        flex-direction: column-reverse;
         height: auto;
     }
     .ba-square {
